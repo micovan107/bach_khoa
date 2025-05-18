@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các chòm sao - Bách Khoa</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Operating Systems Page Styles */
+
+/* Section styling */
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* OS Logo styling */
+section img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
+/* Heading animations */
+h1, h2 {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h1::after, h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ffd700, #ff6b6b);
+    transition: width 0.3s ease;
+}
+
+h1:hover::after, h2:hover::after {
+    width: 100%;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    position: relative;
+    padding: 0.5rem 0;
+    transition: transform 0.2s ease;
+}
+
+ul li::before {
+    content: '→';
+    position: absolute;
+    left: -1.5rem;
+    color: #ffd700;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+}
+
+ul li:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Strong text highlight */
+strong {
+    color: #ff6b6b;
+    transition: color 0.3s ease;
+}
+
+strong:hover {
+    color: #ffd700;
+}
+
+/* Article content spacing */
+.article-content {
+    max-width: 1000px;
+    margin: 80px auto 2rem;
+    padding: 0 2rem;
+}
+
+/* Constellation Grid Layout */
+.constellation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.constellation-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.constellation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.constellation-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+
+    section img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .constellation-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bách Khoa</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="../index.html#articles">Bài viết</a></li>
+                <li><a href="../index.html#about">Giới thiệu</a></li>
+                <li><a href="../index.html#contact">Liên hệ</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="article-content">
+        <h1>Khám Phá Các Chòm Sao</h1>
+        
+        <section>
+            <h2>Giới thiệu về chòm sao</h2>
+            <p>Chòm sao là một nhóm nhiều ngôi sao mà các nhà thiên văn học thường dựa vào đó để định vị chính xác từng ngôi sao trong số hàng nghìn ngôi sao trên bầu trời đêm.Ngày nay,các nhà thiên văn chia bầu trời thành 88 chòm sao khác nhau,vào các thời điểm khác nhau trong năm,bạn sẽ nhìn thấy các chòm sao khác nhau.</p>
+        </section>
+        <section>
+            <p>Ⓞ Hầu hết các chòm sao đã được các nhà chiêm tinh phát hiện từ rất lâu,thời Ai Cập và Babylon cổ đại.</p>
+            <p>Ⓞ Các ngôi sao trong chòm sao được đặt tên theo các ngôi sao trong hệ sao.</p>
+            <p>Ⓞ Các chòm sao chỉ đơn giản là các nhóm ngôi sao-không hề có bất kì liên kết thực sự nào giữa các ngôi sao.</p>
+            <p>Ⓞ Các chòm sao ở Nam Bán Cầu khác với các chòm sao ở Bắc Bán Cầu.</p>
+            <img src="data:image/jpeg;base64,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" alt="Chòm Sao"style="width: 600px; height: auto;">
+            <p>Ⓞ Nhiều chòm sao được đặt tên theo các vị thần thoại Hi Lạp, như người thợ săn Orion hay thần Perseur, tuy nhiên mỗi tên gọi thường được viết bằng chữ La-tinh chứ không phải Hi Lạp.</p>
+            <p>Ⓞ Các ngôi sao trong mỗi chòm sao được đặt tên theo bảng chữ cái Hi Lạp.</p>
+            <p>Ⓞ Ngôi sao sáng nhất trong mỗi chòm sao được gọi là sao Alpha, tiếp đến là sao Beta...</p>
+            <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-9530-6230-a4fe-55297a02d0c1/raw?se=2025-04-23T13%3A50%3A07Z&sp=r&sv=2024-08-04&sr=b&scid=a88227a3-227e-5c4a-b685-9309adc07976&skoid=72d71449-cf2f-4f10-a498-f160460104ee&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-23T04%3A29%3A52Z&ske=2025-04-24T04%3A29%3A52Z&sks=b&skv=2024-08-04&sig=R1z6suKnWiPH7uEPZmG6inTm2fbE/sj4kAgWiCgbCYA%3D" alt="có thể bạn chưa biết"style="width: 300px; height: auto;">
+        </section>
+
+        <section>
+            <h2>12 Chòm Sao Hoàng Đạo</h2>
+            
+            <div class="constellation-grid">
+                <div class="constellation-item">
+                    <h3>Bạch Dương (Aries)</h3>
+                    <p><strong>Thời gian:</strong> 21/3 - 19/4</p>
+                    <p>Biểu tượng cho sự nhiệt huyết, dũng cảm và tiên phong. Người thuộc cung Bạch Dương thường có tính cách mạnh mẽ, độc lập và đầy năng lượng.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Kim Ngưu (Taurus)</h3>
+                    <p><strong>Thời gian:</strong> 20/4 - 20/5</p>
+                    <p>Đại diện cho sự kiên định và thực tế. Người thuộc cung Kim Ngưu thường đáng tin cậy, thích sự ổn định và có khiếu thẩm mỹ cao.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Song Tử (Gemini)</h3>
+                    <p><strong>Thời gian:</strong> 21/5 - 21/6</p>
+                    <p>Tượng trưng cho sự linh hoạt và giao tiếp. Người thuộc cung Song Tử thường thông minh, hoạt bát và có khả năng thích nghi tốt.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Cự Giải (Cancer)</h3>
+                    <p><strong>Thời gian:</strong> 22/6 - 22/7</p>
+                    <p>Biểu tượng của tình cảm và sự chăm sóc. Người thuộc cung Cự Giải thường nhạy cảm, giàu tình cảm và có tính bảo vệ cao.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Sư Tử (Leo)</h3>
+                    <p><strong>Thời gian:</strong> 23/7 - 22/8</p>
+                    <p>Đại diện cho sự tự tin và lãnh đạo. Người thuộc cung Sư Tử thường có cá tính mạnh mẽ, sáng tạo và thích được chú ý.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Xử Nữ (Virgo)</h3>
+                    <p><strong>Thời gian:</strong> 23/8 - 22/9</p>
+                    <p>Tượng trưng cho sự hoàn hảo và chi tiết. Người thuộc cung Xử Nữ thường cẩn thận, ngăn nắp và có óc phân tích sắc bén.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Thiên Bình (Libra)</h3>
+                    <p><strong>Thời gian:</strong> 23/9 - 22/10</p>
+                    <p>Biểu tượng của công lý và hài hòa. Người thuộc cung Thiên Bình thường công bằng, thân thiện và yêu cái đẹp.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Bọ Cạp (Scorpio)</h3>
+                    <p><strong>Thời gian:</strong> 23/10 - 21/11</p>
+                    <p>Đại diện cho sự bí ẩn và đam mê. Người thuộc cung Bọ Cạp thường có trực giác tốt, quyết đoán và có sức mạnh nội tâm lớn.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Nhân Mã (Sagittarius)</h3>
+                    <p><strong>Thời gian:</strong> 22/11 - 21/12</p>
+                    <p>Tượng trưng cho sự tự do và phiêu lưu. Người thuộc cung Nhân Mã thường lạc quan, thích khám phá và yêu tự do.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Ma Kết (Capricorn)</h3>
+                    <p><strong>Thời gian:</strong> 22/12 - 19/1</p>
+                    <p>Biểu tượng của sự chăm chỉ và tham vọng. Người thuộc cung Ma Kết thường có kỷ luật cao, thực tế và hướng đến mục tiêu.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Bảo Bình (Aquarius)</h3>
+                    <p><strong>Thời gian:</strong> 20/1 - 18/2</p>
+                    <p>Đại diện cho sự độc đáo và nhân văn. Người thuộc cung Bảo Bình thường sáng tạo, độc lập và có tư duy tiến bộ.</p>
+                </div>
+
+                <div class="constellation-item">
+                    <h3>Song Ngư (Pisces)</h3>
+                    <p><strong>Thời gian:</strong> 19/2 - 20/3</p>
+                    <p>Tượng trưng cho sự mơ mộng và trực giác. Người thuộc cung Song Ngư thường nhạy cảm, giàu trí tưởng tượng và có tâm hồn nghệ sĩ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ý Nghĩa Thiên Văn Học</h2>
+            <p>Ngoài ý nghĩa trong chiêm tinh học, các chòm sao còn có vai tròng quan trọng trong thiên văn học. Chúng giúp các nhà thiên văn định vị các thiên thể trên bầu trời và nghiên cứu vũ trụ. Mỗi chòm sao đều có những ngôi sao đặc trưng và những câu chuyện thần thoại thú vị đằng sau tên gọi của chúng.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Về chúng tôi</h4>
+                <p>Trang web bách khoa cung cấp kiến thức đa dạng và chính xác.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p>Email: micovan108@gmail.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bách Khoa. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

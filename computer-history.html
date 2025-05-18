@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá thế giới Máy Tính - Bách Khoa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background: #7ab6ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #005599;
+        }
+
+        h3 {
+            color: #008899;
+        }
+
+        ul {
+            margin-left: 30px;
+        }
+
+        footer {
+            text-align: center;
+            background: #eee;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .timeline-image {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .component-item {
+            padding: 15px;
+            border-radius: 8px;
+            background: #f5f5f5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .fun-fact {
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #0077cc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+    <h1>Khám phá Thế giới Máy Tính</h1>
+    <p>Từ lịch sử, cấu tạo, ứng dụng đến những sự thật thú vị!</p>
+</header>
+
+<main>
+    <h2>💡 Giới thiệu chung</h2>
+    <p>Máy tính là thiết bị điện tử có khả năng xử lý, lưu trữ và truyền tải dữ liệu một cách chính xác và nhanh chóng. Từ siêu máy tính cho đến smartphone, máy tính đã và đang định hình toàn bộ cuộc sống con người.</p>
+
+    <h2>🧠 Cấu tạo máy tính</h2>
+    <p>Một máy tính hiện đại là tổ hợp của nhiều thành phần phức tạp, mỗi thành phần đều có vai trò quan trọng riêng:</p>
+    
+    <div class="component-grid">
+        <div class="component-item">
+            <h3>CPU (Bộ xử lý trung tâm)</h3>
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <rect x="20" y="20" width="60" height="60" fill="#e0e0e0" stroke="#666"/>
+                <path d="M30 30 h40 v40 h-40 z" fill="#ccc" stroke="#666"/>
+                <line x1="40" y1="20" x2="40" y2="10" stroke="#666"/>
+                <line x1="60" y1="20" x2="60" y2="10" stroke="#666"/>
+            </svg>
+            <p>"Bộ não" của máy tính, thực hiện hàng tỷ phép tính mỗi giây. CPU hiện đại có nhiều nhân xử lý, cho phép thực hiện nhiều tác vụ đồng thời.</p>
+        </div>
+
+        <div class="component-item">
+            <h3>RAM (Bộ nhớ truy cập ngẫu nhiên)</h3>
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <rect x="20" y="30" width="60" height="40" fill="#f0f0f0" stroke="#666"/>
+                <line x1="30" y1="30" x2="30" y2="70" stroke="#666"/>
+                <line x1="40" y1="30" x2="40" y2="70" stroke="#666"/>
+                <line x1="50" y1="30" x2="50" y2="70" stroke="#666"/>
+            </svg>
+            <p>Bộ nhớ tạm thời tốc độ cao, lưu trữ dữ liệu đang được xử lý. Càng nhiều RAM, máy tính càng có khả năng xử lý nhiều tác vụ cùng lúc.</p>
+        </div>
+
+        <div class="component-item">
+            <h3>Ổ cứng (HDD/SSD)</h3>
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <rect x="20" y="20" width="60" height="60" fill="#f5f5f5" stroke="#666"/>
+                <circle cx="50" cy="50" r="20" fill="none" stroke="#666"/>
+                <circle cx="50" cy="50" r="5" fill="#666"/>
+            </svg>
+            <p>Thiết bị lưu trữ dài hạn. SSD nhanh hơn HDD nhưng đắt hơn. Dung lượng từ vài trăm GB đến nhiều TB.</p>
+        </div>
+
+        <div class="component-item">
+            <h3>GPU (Card đồ họa)</h3>
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <rect x="10" y="30" width="80" height="40" fill="#e6e6e6" stroke="#666"/>
+                <rect x="20" y="40" width="30" height="20" fill="#ccc" stroke="#666"/>
+                <circle cx="70" cy="50" r="10" fill="none" stroke="#666"/>
+            </svg>
+            <p>Chuyên xử lý đồ họa 2D/3D, video, game. GPU hiện đại còn hỗ trợ AI và tính toán khoa học.</p>
+        </div>
+    </div>
+
+    <h2>⏳ Lịch sử phát triển</h2>
+    
+    <div class="timeline-item">
+        <svg class="timeline-image" viewBox="0 0 200 200">
+            <rect x="40" y="40" width="120" height="120" fill="#ddd" stroke="#666" stroke-width="2"/>
+            <circle cx="100" cy="100" r="30" fill="none" stroke="#666" stroke-width="2"/>
+            <line x1="70" y1="100" x2="130" y2="100" stroke="#666" stroke-width="2"/>
+            <text x="100" y="160" text-anchor="middle" fill="#333">Pascal Calculator</text>
+        </svg>
+        <div class="timeline-content">
+            <h3>1642: Máy tính Pascal</h3>
+            <p>Blaise Pascal phát minh máy tính cơ học đầu tiên có tên Pascaline. Máy có khả năng thực hiện phép cộng và trừ 8 chữ số, được thiết kế để giúp cha ông - một nhân viên thu thuế - trong công việc tính toán.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <svg class="timeline-image" viewBox="0 0 200 200">
+            <rect x="30" y="30" width="140" height="100" fill="#eee" stroke="#666" stroke-width="2"/>
+            <rect x="50" y="50" width="100" height="60" fill="#ddd" stroke="#666" stroke-width="2"/>
+            <circle cx="100" cy="140" r="20" fill="none" stroke="#666" stroke-width="2"/>
+            <text x="100" y="180" text-anchor="middle" fill="#333">Analytical Engine</text>
+        </svg>
+        <div class="timeline-content">
+            <h3>1837: Analytical Engine</h3>
+            <p>Charles Babbage thiết kế máy tính lập trình đầu tiên - Analytical Engine. Máy này có khả năng thực hiện các phép tính phức tạp và lưu trữ kết quả, được coi là tiền thân của máy tính hiện đại. Ada Lovelace đã viết chương trình đầu tiên cho máy này.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <svg class="timeline-image" viewBox="0 0 200 200">
+            <rect x="20" y="40" width="160" height="120" fill="#f0f0f0" stroke="#666" stroke-width="2"/>
+            <rect x="40" y="60" width="120" height="80" fill="#ddd" stroke="#666" stroke-width="2"/>
+            <circle cx="100" cy="100" r="10" fill="#666"/>
+            <text x="100" y="180" text-anchor="middle" fill="#333">ENIAC</text>
+        </svg>
+        <div class="timeline-content">
+            <h3>1945: ENIAC</h3>
+            <p>ENIAC (Electronic Numerical Integrator and Computer) là máy tính điện tử đầu tiên có khả năng lập trình được. Nặng 30 tấn, chiếm diện tích 167m², tiêu thụ 150kW điện và có thể thực hiện 5000 phép tính/giây.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <svg class="timeline-image" viewBox="0 0 200 200">
+            <rect x="60" y="60" width="80" height="80" fill="#e0e0e0" stroke="#666" stroke-width="2"/>
+            <path d="M70 80 h60 M70 100 h60 M70 120 h60" stroke="#666" stroke-width="2" fill="none"/>
+            <text x="100" y="160" text-anchor="middle" fill="#333">Intel 4004</text>
+        </svg>
+        <div class="timeline-content">
+            <h3>1971: Intel 4004</h3>
+            <p>Intel giới thiệu vi xử lý 4004 - chip vi xử lý thương mại đầu tiên trên thế giới. Với 2300 transistor, tốc độ xử lý 740KHz, nó đã mở ra kỷ nguyên của máy tính cá nhân và các thiết bị điện tử thông minh.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <svg class="timeline-image" viewBox="0 0 200 200">
+            <rect x="40" y="40" width="120" height="90" fill="#f5f5f5" stroke="#666" stroke-width="2"/>
+            <rect x="60" y="60" width="80" height="50" fill="#ddd" stroke="#666" stroke-width="2"/>
+            <rect x="70" y="140" width="60" height="20" fill="#ccc" stroke="#666" stroke-width="2"/>
+            <text x="100" y="180" text-anchor="middle" fill="#333">IBM PC</text>
+        </svg>
+        <div class="timeline-content">
+            <h3>1981: IBM PC</h3>
+            <p>IBM PC đánh dấu sự ra đời của chuẩn máy tính cá nhân. Với kiến trúc mở, giá cả phải chăng và khả năng tương thích cao, nó đã tạo nên cuộc cách mạng trong ngành công nghiệp máy tính và đặt nền móng cho sự phát triển của Windows.</p>
+        </div>
+    </div>
+
+    <h2>🎯 Lợi ích & Ứng dụng</h2>
+    <ul>
+        <li>Giúp tính toán siêu tốc và chính xác.</li>
+        <li>Giao tiếp toàn cầu qua Internet.</li>
+        <li>Thiết kế, sáng tạo, mô phỏng trong kiến trúc, phim ảnh, y học.</li>
+        <li>Tự động hóa nhà máy, robot, xe tự lái.</li>
+        <li>Giải trí: game, phim, âm nhạc, thực tế ảo.</li>
+    </ul>
+
+    <h2>🤔 Có thể bạn chưa biết</h2>
+    
+    <div class="fun-fact">
+        <h3>💡 Sức mạnh của ENIAC</h3>
+        <p>ENIAC tiêu thụ 150 kW điện mỗi giờ - tương đương với mức tiêu thụ điện của 100 căn hộ hiện đại. Để vận hành, nó cần 6 kỹ sư làm việc toàn thời gian và phải thay thế khoảng 20 bóng đèn điện tử mỗi ngày.</p>
+    </div>
+
+    <div class="fun-fact">
+        <h3>📱 Smartphone vs Máy tính Apollo</h3>
+        <p>iPhone 12 có sức mạnh xử lý gấp 100 triệu lần so với máy tính hướng dẫn tàu Apollo 11 lên Mặt Trăng năm 1969. Toàn bộ chương trình Apollo chỉ sử dụng 4KB RAM - bằng 1/500.000 RAM của một chiếc smartphone phổ thông hiện nay.</p>
+    </div>
+
+    <div class="fun-fact">
+        <h3>🎮 Minecraft và Không gian</h3>
+        <p>Một bản cài đặt Minecraft đầy đủ (khoảng 1GB) có dung lượng lớn hơn 300 lần so với toàn bộ phần mềm điều khiển tàu Apollo (chỉ 2.048KB). Điều này cho thấy sự phát triển vượt bậc của công nghệ phần mềm trong 50 năm qua.</p>
+    </div>
+
+    <div class="fun-fact">
+        <h3>⚡ Tốc độ phát triển</h3>
+        <p>Theo định luật Moore, số lượng transistor trên chip vi xử lý tăng gấp đôi mỗi 18-24 tháng. Từ con chip 4004 với 2.300 transistor năm 1971, đến nay các chip hiện đại có thể chứa hơn 50 tỷ transistor.</p>
+    </div>
+
+    <h2>🌌 Những khám phá thú vị</h2>
+    <ul>
+        <li>Máy tính lượng tử có thể phá vỡ mã hóa hiện nay trong vài giây.</li>
+        <li>AI có thể viết nhạc, vẽ tranh, làm thơ, lập trình và chẩn đoán bệnh.</li>
+        <li>Chip vi xử lý hiện đại có hơn 100 tỷ transistor trên diện tích chỉ bằng 1 con tem bưu điện.</li>
+    </ul>
+</main>
+
+<footer>
+    &copy; 2025 Bách Khoa. Học cùng nhau, hiểu sâu hơn!
+</footer>
+
+</body>
+</html>

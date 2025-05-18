@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sao thổ- Bách Khoa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #002c4b;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        h2 {
+            border-left: 5px solid #007acc;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .volcano-structure {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .volcano-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-type {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .impact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .impact-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .impact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .famous-volcanoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bách Khoa</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#articles">Bài viết</a></li>
+                <li><a href="index.html#about">Giới thiệu</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-content">
+        <br>
+        <h1>Sao Thổ - Hành tinh Vành đai</h1>
+        <img src="data:image/jpeg;base64,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EREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH//2Q==" alt="Sao Thổ" class="volcano-structure">
+        
+        <h2>Tổng quan</h2>
+        <p>Sao Thổ là hành tinh thứ sáu tính từ Mặt Trời và là hành tinh lớn thứ hai trong Hệ Mặt Trời. Nó nổi tiếng với hệ thống vành đai băng đá độc đáo, làm cho nó trở thành một trong những hành tinh đẹp nhất khi quan sát từ Trái Đất.</p>
+
+        <h2>Đặc điểm vật lý</h2>
+        <div class="comparison-grid">
+            <div class="comparison-item">
+                <h3>So sánh với Trái Đất</h3>
+                <ul>
+                    <li>Đường kính: Lớn gấp 9.5 lần Trái Đất</li>
+                    <li>Khối lượng: Nặng gấp 95 lần Trái Đất</li>
+                    <li>Chu kỳ tự quay: 10.7 giờ Trái Đất</li>
+                    <li>Chu kỳ quỹ đạo: 29.5 năm Trái Đất</li>
+                    <li>Nhiệt độ bề mặt trung bình: -178°C (so với 15°C của Trái Đất)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Cấu trúc và thành phần</h2>
+        <p>Sao Thổ là một hành tinh khí khổng lồ, chủ yếu được cấu tạo từ hydro (75%) và heli (25%). Không giống như Trái Đất có lõi đá cứng, Sao Thổ có cấu trúc phân tầng với:</p>
+        <ul>
+            <li>Lõi đá-kim loại nhỏ ở trung tâm</li>
+            <li>Lớp hydro kim loại lỏng</li>
+            <li>Lớp hydro phân tử lỏng</li>
+            <li>Khí quyển dày đặc</li>
+        </ul>
+
+        <h2>Hệ thống vành đai</h2>
+        <p>Đặc điểm nổi bật nhất của Sao Thổ là hệ thống vành đai rộng lớn và phức tạp:</p>
+        <ul>
+            <li>Rộng hơn 280.000 km nhưng chỉ dày khoảng 20 meter</li>
+            <li>Chủ yếu gồm các mảnh băng, đá và bụi không gian</li>
+            <li>Có 7 vành đai chính được đặt tên từ A đến G</li>
+            <li>Phản chiếu ánh sáng Mặt Trời mạnh, làm cho Sao Thổ trở nên rực rỡ</li>
+        </ul>
+
+        <h2>Khí quyển</h2>
+        <p>Khí quyển Sao Thổ khác biệt hoàn toàn so với Trái Đất:</p>
+        <ul>
+            <li>Chủ yếu là hydro và heli</li>
+            <li>Có các dải mây màu sắc do các hợp chất hóa học khác nhau</li>
+            <li>Tốc độ gió có thể đạt tới 1.800 km/h (so với tốc độ gió mạnh nhất trên Trái Đất khoảng 400 km/h)</li>
+            <li>Xuất hiện cơn bão hình lục giác khổng lồ ở cực Bắc</li>
+        </ul>
+
+        <h2>Vệ tinh</h2>
+        <p>Sao Thổ có hệ thống vệ tinh phong phú hơn nhiều so với Trái Đất:</p>
+        <ul>
+            <li>Có 82 vệ tinh đã được xác nhận (so với 1 vệ tinh của Trái Đất)</li>
+            <li>Titan là vệ tinh lớn nhất, lớn hơn cả Sao Thủy</li>
+            <li>Enceladus có các vòi phun nước băng từ bề mặt</li>
+            <li>Nhiều vệ tinh nhỏ nằm trong các vành đai</li>
+        </ul>
+
+        <h2>Khám phá và nghiên cứu</h2>
+        <p>Các tàu vũ trụ đã giúp chúng ta hiểu rõ hơn về Sao Thổ:</p>
+        <ul>
+            <li>Pioneer 11 (1979): Tàu đầu tiên bay qua Sao Thổ</li>
+            <li>Voyager 1 & 2 (1980, 1981): Cung cấp hình ảnh chi tiết</li>
+            <li>Cassini-Huygens (2004-2017): Nghiên cứu dài hạn về Sao Thổ và các vệ tinh</li>
+        </ul>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Về chúng tôi</h4>
+                <p>Trang web bách khoa cung cấp kiến thức đa dạng và chính xác.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p>Email: micovan108@gmail.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bách Khoa. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>

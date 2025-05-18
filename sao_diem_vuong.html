@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sao diêm vương - Bách Khoa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #002c4b;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        h2 {
+            border-left: 5px solid #007acc;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .volcano-structure {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .volcano-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-type {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .impact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .impact-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .impact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .technical-specs table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #f8f9fa;
+        }
+
+        .technical-specs th, .technical-specs td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+
+        .technical-specs th {
+            background-color: #e9ecef;
+            font-weight: 600;
+        }
+
+        .technical-specs tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .pluto-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bách Khoa</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#articles">Bài viết</a></li>
+                <li><a href="index.html#about">Giới thiệu</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-content">
+        <br>
+        <h1>Sao Diêm Vương (Pluto)</h1>
+
+        <section>
+            <h2>Tổng quan</h2>
+            <p>Sao Diêm Vương, trước đây được coi là hành tinh thứ 9 trong Hệ Mặt Trời, hiện nay được phân loại là một hành tinh lùn. Được phát hiện vào năm 1930, nó là thiên thể lớn nhất được biết đến trong vành đai Kuiper và là hành tinh lùn lớn thứ hai trong Hệ Mặt Trời (sau Eris).</p>
+            
+            <div class="technical-specs">
+                <h3>Thông số kỹ thuật</h3>
+                <table>
+                    <tr>
+                        <th>Thông số</th>
+                        <th>Giá trị</th>
+                    </tr>
+                    <tr>
+                        <td>Đường kính trung bình</td>
+                        <td>2.377 km</td>
+                    </tr>
+                    <tr>
+                        <td>Khối lượng</td>
+                        <td>1,303 × 10²² kg</td>
+                    </tr>
+                    <tr>
+                        <td>Nhiệt độ bề mặt trung bình</td>
+                        <td>-230°C</td>
+                    </tr>
+                    <tr>
+                        <td>Áp suất khí quyển</td>
+                        <td>0,3 Pa (thay đổi theo mùa)</td>
+                    </tr>
+                    <tr>
+                        <td>Chu kỳ quay quanh trục</td>
+                        <td>6,4 ngày Trái Đất</td>
+                    </tr>
+                    <tr>
+                        <td>Chu kỳ quay quanh Mặt Trời</td>
+                        <td>248 năm Trái Đất</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Đặc điểm vật lý</h2>
+            <img src="data:image/jpeg;base64,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" alt="Sao Diêm Vương" class="pluto-image">
+            <p>Sao Diêm Vương có đường kính khoảng 2.377 km, bằng khoảng 1/6 đường kính Trái Đất. Bề mặt của nó chủ yếu được cấu tạo từ băng nitơ đông lạnh, với một lượng nhỏ methane và carbon monoxide. Nhiệt độ trung bình trên bề mặt là -230°C, khiến nó trở thành một trong những nơi lạnh nhất trong Hệ Mặt Trời.</p>
+
+            <h3>Cấu trúc bề mặt</h3>
+            <p>Bề mặt Sao Diêm Vương có địa hình đa dạng bao gồm:</p>
+            <ul>
+                <li>Đồng bằng băng Sputnik Planitia - một vùng trũng hình trái tim rộng lớn</li>
+                <li>Dãy núi băng cao tới 3.500 mét</li>
+                <li>Thung lũng sâu và khe nứt địa chất</li>
+                <li>Các miệng núi lửa băng cổ đại</li>
+            </ul>
+
+            <h3>Thành phần hóa học</h3>
+            <p>Phân tích từ tàu New Horizons cho thấy Sao Diêm Vương có cấu trúc phân tầng:</p>
+            <ul>
+                <li>Lõi đá chiếm khoảng 2/3 khối lượng</li>
+                <li>Lớp băng nước bao phủ bên ngoài</li>
+                <li>Bề mặt phủ băng nitơ, methane và carbon monoxide</li>
+                <li>Khí quyển mỏng chứa nitơ, methane và các hydrocarbon khác</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quỹ đạo và chuyển động</h2>
+            <p>Quỹ đạo của Sao Diêm Vương có đặc điểm độc đáo với độ nghiêng 17 độ so với mặt phẳng hoàng đạo. Một năm trên Sao Diêm Vương kéo dài 248 năm Trái Đất. Đôi khi, quỹ đạo của nó đưa nó đến gần Mặt Trời hơn cả Sao Hải Vương.</p>
+        </section>
+
+        <section>
+            <h2>Vệ tinh</h2>
+            <p>Charon là vệ tinh lớn nhất của Sao Diêm Vương, có kích thước gần bằng một nửa hành tinh chủ. Do kích thước tương đối lớn của Charon so với Sao Diêm Vương, hai thiên thể này thường được coi là một hệ thống nhị phân. Ngoài Charon, Sao Diêm Vương còn có 4 vệ tinh nhỏ khác: Nix, Hydra, Kerberos và Styx.</p>
+        </section>
+
+        <section>
+            <h2>Khám phá và nghiên cứu</h2>
+            <p>Tàu vũ trụ New Horizons của NASA đã thực hiện chuyến bay lịch sử ngang qua Sao Diêm Vương vào năm 2015, cung cấp những hình ảnh chi tiết đầu tiên về hành tinh lùn này. Những phát hiện từ nhiệm vụ này đã cho thấy Sao Diêm Vương có địa hình đa dạng bao gồm núi băng, thung lũng, đồng bằng và có thể có một đại dương dưới bề mặt.</p>
+        </section>
+
+        <section>
+            <h2>Phân loại hành tinh lùn</h2>
+            <p>Vào năm 2006, Liên đoàn Thiên văn Quốc tế (IAU) đã định nghĩa lại thuật ngữ "hành tinh", dẫn đến việc Sao Diêm Vương bị loại khỏi danh sách các hành tinh chính thức của Hệ Mặt Trời. Theo định nghĩa mới, Sao Diêm Vương được xếp vào loại hành tinh lùn vì nó không đáp ứng được tiêu chí "làm sạch quỹ đạo của nó".</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Về chúng tôi</h4>
+                <p>Trang web bách khoa cung cấp kiến thức đa dạng và chính xác.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p>Email: micovan108@gmail.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bách Khoa. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>

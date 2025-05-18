@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sao mộc - Bách Khoa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #002c4b;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        h2 {
+            border-left: 5px solid #007acc;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .volcano-structure {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .volcano-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-type {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .impact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .impact-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .impact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .famous-volcanoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bách Khoa</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#articles">Bài viết</a></li>
+                <li><a href="index.html#about">Giới thiệu</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main class="article-content">
+        <br>
+        <h1>Sao Mộc (Jupiter)</h1>
+        
+        <section>
+            <h2>Tổng quan</h2>
+            <p>Sao Mộc là hành tinh lớn nhất trong Hệ Mặt Trời, với khối lượng gấp 2.5 lần tổng khối lượng của tất cả các hành tinh khác cộng lại. Đây là một hành tinh khí khổng lồ, được đặt tên theo vị thần Jupiter trong thần thoại La Mã.</p>
+        </section>
+
+        <section>
+            <h2>Đặc điểm vật lý</h2>
+            <p>Sao Mộc có đường kính xích đạo khoảng 142,984 km (gấp 11 lần Trái Đất). Mặc dù là hành tinh lớn nhất, nhưng Sao Mộc quay rất nhanh, chỉ mất khoảng 10 giờ để hoàn thành một vòng quay quanh trục.</p>
+            <div class="technical-specs">
+                <h3>Thông số kỹ thuật chi tiết:</h3>
+                <ul>
+                    <li>Khối lượng: 1.9 × 10^27 kg (318 lần Trái Đất)</li>
+                    <li>Thể tích: 1.4313 × 10^15 km³ (1,321 lần Trái Đất)</li>
+                    <li>Bán kính trung bình: 69,911 km</li>
+                    <li>Diện tích bề mặt: 6.1419 × 10^10 km² (121.9 lần Trái Đất)</li>
+                    <li>Mật độ trung bình: 1.326 g/cm³</li>
+                    <li>Gia tốc trọng trường tại bề mặt: 24.79 m/s²</li>
+                    <li>Vận tốc thoát: 59.5 km/s</li>
+                    <li>Nhiệt độ bề mặt trung bình: -110°C</li>
+                    <li>Chu kỳ quỹ đạo: 11.9 năm Trái Đất</li>
+                    <li>Khoảng cách trung bình từ Mặt Trời: 778.5 triệu km (5.2 AU)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Cấu trúc và Bầu khí quyển</h2>
+            <p>Sao Mộc không có bề mặt rắn rõ ràng. Hành tinh này chủ yếu được cấu tạo từ hydro (90%) và heli (10%), với một lõi nhỏ có thể là đá và kim loại. Bầu khí quyển của Sao Mộc nổi tiếng với các dải mây đầy màu sắc và các cơn bão khổng lồ.</p>
+            <h3>Từ trường và Vành đai Bức xạ</h3>
+            <p>Sao Mộc có từ trường mạnh nhất trong các hành tinh, với cường độ gấp 14 lần từ trường Trái Đất. Từ trường này tạo ra một magnetosphere khổng lồ, kéo dài tới quỹ đạo của Sao Thổ khi bị gió Mặt Trời tác động. Vành đai bức xạ của Sao Mộc chứa các hạt năng lượng cao bị mắc kẹt trong từ trường, tạo ra mức bức xạ nguy hiểm cho các tàu vũ trụ thăm dò.</p>
+        </section>
+
+        <section>
+            <h2>Vết Đỏ Lớn</h2>
+            <p>Vết Đỏ Lớn là một cơn bão khổng lồ trên Sao Mộc, đã tồn tại ít nhất 400 năm. Nó có kích thước lớn đến mức có thể chứa được 2-3 Trái Đất, với chiều dài khoảng 16,000 km và chiều rộng khoảng 12,000 km. Nhiệt độ bên trong Vết Đỏ Lớn cao hơn so với các vùng xung quanh, và nó quay ngược chiều kim đồng hồ với chu kỳ khoảng 6 ngày Trái Đất.</p>
+            <p>Các quan sát gần đây cho thấy Vết Đỏ Lớn đang co lại với tốc độ khoảng 900 km mỗi năm. Các nhà khoa học đang theo dõi sự thay đổi này và nghiên cứu tác động của nó đến động lực học bầu khí quyển của Sao Mộc. Vết này có tốc độ gió lên đến 640 km/giờ và nhiệt độ dao động từ -156°C đến -160°C.</p>
+        </section>
+
+        <section>
+            <h2>Hệ thống Vệ tinh</h2>
+            <p>Sao Mộc có hệ thống vệ tinh phức tạp với 95 vệ tinh đã được xác nhận (tính đến 2024). Bốn vệ tinh lớn nhất, được gọi là các vệ tinh Galileo, bao gồm:</p>
+            <div class="galilean-moons">
+                <h3>Các vệ tinh Galileo:</h3>
+                <ul>
+                    <li><strong>Io</strong>
+                        <ul>
+                            <li>Đường kính: 3,642 km</li>
+                            <li>Có hơn 400 núi lửa đang hoạt động</li>
+                            <li>Bề mặt được phủ bởi lưu huỳnh và các hợp chất lưu huỳnh</li>
+                        </ul>
+                    </li>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li>Đường kính: 3,122 km</li>
+                            <li>Lớp vỏ băng dày 10-30 km</li>
+                            <li>Có thể chứa đại dương nước lỏng sâu 60-150 km</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ganymede</strong>
+                        <ul>
+                            <li>Đường kính: 5,268 km (lớn hơn cả Sao Thủy)</li>
+                            <li>Có từ trường riêng</li>
+                            <li>Có thể có đại dương nước mặn dưới bề mặt</li>
+                        </ul>
+                    </li>
+                    <li><strong>Callisto</strong>
+                        <ul>
+                            <li>Đường kính: 4,821 km</li>
+                            <li>Bề mặt có nhiều hố va chạm nhất trong Hệ Mặt Trời</li>
+                            <li>Có thể có đại dương nước lỏng dưới bề mặt</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Lịch sử Khám phá</h2>
+            <p>Sao Mộc đã được quan sát từ thời cổ đại. Galileo Galilei là người đầu tiên quan sát Sao Mộc bằng kính thiên văn vào năm 1610 và phát hiện ra bốn vệ tinh lớn nhất của nó. Nhiều tàu vũ trụ đã thăm dò Sao Mộc, bao gồm:</p>
+            <ul>
+                <li>Pioneer 10 và 11 (1973 và 1974) - Những tàu đầu tiên bay qua Sao Mộc</li>
+                <li>Voyager 1 và 2 (1979) - Cung cấp những hình ảnh chi tiết đầu tiên về hệ thống vệ tinh</li>
+                <li>Tàu Galileo (1995-2003) - Nghiên cứu chuyên sâu về Sao Mộc và các vệ tinh của nó</li>
+                <li>Tàu New Horizons (2007) - Bay qua Sao Mộc trên đường đến Sao Diêm Vương</li>
+                <li>Tàu Juno (2016-hiện tại) - Đang nghiên cứu cấu trúc bên trong, từ trường và bầu khí quyển của Sao Mộc</li>
+            </ul>
+            <h3>Khám phá mới từ tàu Juno</h3>
+            <p>Tàu Juno đã cung cấp những phát hiện quan trọng về Sao Mộc, bao gồm:</p>
+            <ul>
+                <li>Phát hiện các cơn bão cực lớn ở các cực của hành tinh</li>
+                <li>Xác định rằng từ trường của Sao Mộc phức tạp hơn dự kiến</li>
+                <li>Phát hiện "sông" ammonia chảy sâu trong bầu khí quyển</li>
+                <li>Cung cấp dữ liệu mới về cấu trúc bên trong của hành tinh</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Về chúng tôi</h4>
+                <p>Trang web bách khoa cung cấp kiến thức đa dạng và chính xác.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p>Email: micovan108@gmail.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bách Khoa. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>

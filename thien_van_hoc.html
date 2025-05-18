@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiên văn học- Bách Khoa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #002c4b;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        h2 {
+            border-left: 5px solid #007acc;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .volcano-structure {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .volcano-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-type {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .impact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .impact-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .impact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .famous-volcanoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .khung-bao {
+            border: 2px solid #4CAF50;     /* Viền màu xanh lá */
+            border-radius: 15px;           /* Bo góc 15px */
+            padding: 15px;                 /* Khoảng cách bên trong */
+            background-color: #f9f9f9;     /* Màu nền nhạt */
+            max-width: 500px;              /* Chiều rộng tối đa */
+            margin: 20px auto;             /* Căn giữa */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bách Khoa</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#articles">Bài viết</a></li>
+                <li><a href="index.html#about">Giới thiệu</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-content">
+        <br>
+        <br>
+        <h1>Thiên văn học</h1>
+        
+        <div class="khung-bao">
+            <h2>✨ Góc kiến thức thú vị</h2>
+            <p>Thiên văn học – hay còn gọi là <strong>ngành khoa học của những vì sao</strong> – là cánh cửa mở ra thế giới bao la ngoài Trái Đất. Từ những vì tinh tú xa xôi, hành tinh lạ lùng, cho đến những lỗ đen nuốt trọn ánh sáng – tất cả đều là một phần trong hành trình khám phá vũ trụ kỳ vĩ này.</p>
+        </div>
+    
+        <h2>📜 Hành trình từ cổ đại đến hiện đại</h2>
+        <p>Từ thời cổ đại, con người đã ngước nhìn bầu trời để tìm câu trả lời cho sự sống. Những người Babylon cổ đã vẽ bản đồ sao từ 3.000 năm trước. Người Ai Cập xây kim tự tháp thẳng hàng với các vì sao. Và rồi Copernicus, Galileo và Newton đã thắp sáng tri thức nhân loại bằng những phát hiện vĩ đại.</p>
+        <img src="data:image/jpeg;base64,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" alt="Nhà thiên văn học Galileo" class="volcano-structure">
+    
+        <h2>🔭 Các lĩnh vực chính</h2>
+        <div class="volcano-types">
+            <div class="volcano-type">
+                <h3>👁️ Thiên văn học quan sát</h3>
+                <p>Nhìn vào vũ trụ bằng kính thiên văn – từ ánh sáng khả kiến đến sóng radio, tia X, tia gamma.</p>
+            </div>
+            <div class="volcano-type">
+                <h3>🧠 Thiên văn học lý thuyết</h3>
+                <p>Dùng toán học và vật lý để mô phỏng các hiện tượng như Big Bang, hố đen, vật chất tối.</p>
+            </div>
+            <div class="volcano-type">
+                <h3>📡 Thiên văn học vô tuyến</h3>
+                <p>“Lắng nghe” vũ trụ qua tín hiệu vô tuyến – giúp phát hiện các pulsar, tín hiệu từ không gian sâu.</p>
+            </div>
+            <div class="volcano-type">
+                <h3>🌌 Vũ trụ học</h3>
+                <p>Nghiên cứu toàn bộ cấu trúc, lịch sử và số phận của vũ trụ – từ khi sinh ra đến tương lai xa.</p>
+            </div>
+        </div>
+    
+        <h2>🚀 Công nghệ thiên văn hiện đại</h2>
+        <p>Ngày nay, với các kính thiên văn không gian như <strong>Hubble</strong> hay <strong>James Webb</strong>, chúng ta có thể "nhìn" ngược về quá khứ hàng tỷ năm ánh sáng. Các siêu máy tính mô phỏng sự hình thành của thiên hà, và robot tự hành đang khám phá Sao Hỏa mỗi ngày.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3BRwu514lY6KSuPGWJmyc8A8Ftw1gceki4g&s" alt="Hình ảnh từ James Webb Space Telescope" class="volcano-structure">
+    
+        <h2>🌟 Vai trò & ý nghĩa</h2>
+        <ul class="impact-list">
+            <li>Giúp con người hiểu rõ nguồn gốc và vị trí của chính mình trong vũ trụ bao la.</li>
+            <li>Thúc đẩy tiến bộ công nghệ – từ vệ tinh, GPS đến viễn thông hiện đại.</li>
+            <li>Truyền cảm hứng cho triết học, nghệ thuật, văn hóa và cả khoa học viễn tưởng.</li>
+            <li>Mở ra câu hỏi lớn về sự sống ngoài Trái Đất và tương lai nhân loại.</li>
+        </ul>
+    
+        <h2>🇻🇳 Thiên văn học tại Việt Nam</h2>
+        <p>Ngày càng nhiều bạn trẻ tại Việt Nam tham gia vào lĩnh vực hấp dẫn này. Các đài thiên văn như <strong>Đài thiên văn Hòa Lạc</strong> hay <strong>Nha Trang</strong> đã đi vào hoạt động. Nhiều câu lạc bộ thiên văn học, sự kiện quan sát nguyệt thực, nhật thực được tổ chức tại Hà Nội, TP.HCM, Đà Nẵng,...</p>
+        <img src="data:image/jpeg;base64,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" class="volcano-structure">
+        <h2>Điều kì thú</h2>
+        <p>Năm 2003, vệ tinh WMAP của NASA đã chụp được hình ảnh của những vùng xa xôi nhất trong vũ trụ, cách xa gần 14 tỉ năm ánh sáng, cho thấy hình hài vũ trụ trước khi các vì sao và dải thiên hà hình thành.</p>
+        <h2>Chiêm tinh học</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdD7tuyMsut3HNxAaJDRsQ1fts5lmiKz46cQ&s" alt="Ảnh minh họa" style="height: 400px;">
+        <h2>📚 Kết luận</h2>
+        <p>Thiên văn học không chỉ là khoa học – mà còn là <strong>ước mơ, niềm tin và khát vọng chạm vào những điều xa xôi nhất</strong> của con người. Khi bạn ngước nhìn bầu trời đêm, hãy nhớ: đâu đó giữa các vì sao, một câu chuyện vĩ đại vẫn đang được viết nên – và bạn có thể là một phần trong đó.</p>
+       
+
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Về chúng tôi</h4>
+                <p>Trang web bách khoa cung cấp kiến thức đa dạng và chính xác.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p>Email: micovan108@gmail.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bách Khoa. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>
