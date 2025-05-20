@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tàu con thoi- Bách Khoa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #002c4b;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        h2 {
+            border-left: 5px solid #007acc;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .volcano-structure {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .volcano-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-type {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .impact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .impact-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .impact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .famous-volcanoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .khung-bao {
+            border: 2px solid #4CAF50;     /* Viền màu xanh lá */
+            border-radius: 15px;           /* Bo góc 15px */
+            padding: 15px;                 /* Khoảng cách bên trong */
+            background-color: #f9f9f9;     /* Màu nền nhạt */
+            max-width: 500px;              /* Chiều rộng tối đa */
+            margin: 20px auto;             /* Căn giữa */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bách Khoa</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#articles">Bài viết</a></li>
+                <li><a href="index.html#about">Giới thiệu</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-content">
+        <br>
+        <br>
+        <h1>Tàu con thoi</h1>
+        
+        <div class="khung-bao">
+            <h2>✨ Góc kiến thức thú vị</h2>
+            <p>Tàu con thoi – hay còn gọi là <strong>tàu vũ trụ đa dụng</strong> – là phương tiện vũ trụ có khả năng tái sử dụng đầu tiên của loài người. Với thiết kế độc đáo kết hợp giữa tên lửa và máy bay, tàu con thoi đã mở ra kỷ nguyên mới trong lịch sử khám phá không gian.</p>
+        </div>
+    
+        <h2>📜 Lịch sử phát triển</h2>
+        <p>Chương trình tàu con thoi của NASA bắt đầu từ những năm 1970 và kết thúc vào năm 2011, trải qua hơn 30 năm hoạt động:</p>
+        <ul class="impact-list">
+            <li>1969: NASA bắt đầu nghiên cứu phương tiện vũ trụ có thể tái sử dụng</li>
+            <li>1972: Tổng thống Nixon chính thức phê duyệt chương trình</li>
+            <li>12/4/1981: Tàu Columbia thực hiện chuyến bay đầu tiên</li>
+            <li>1986: Thảm họa tàu Challenger, 7 phi hành gia thiệt mạng</li>
+            <li>2003: Thảm họa tàu Columbia khi trở về Trái Đất</li>
+            <li>21/7/2011: Tàu Atlantis thực hiện chuyến bay cuối cùng, kết thúc chương trình</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Space_Shuttle_Columbia_launching.jpg/800px-Space_Shuttle_Columbia_launching.jpg" alt="Tàu Columbia phóng lên vũ trụ" class="volcano-structure">
+    
+        <h2>🚀 Cấu trúc và công nghệ</h2>
+        <p>Tàu con thoi là một hệ thống phức tạp gồm ba thành phần chính:</p>
+        <div class="volcano-types">
+            <div class="volcano-type">
+                <h3>🛸 Tàu quỹ đạo (Orbiter)</h3>
+                <p>Phần chính của tàu con thoi, nơi phi hành đoàn làm việc và sinh sống. Có khả năng mang theo vệ tinh, thiết bị khoa học và quay trở về Trái Đất như một máy bay.</p>
+            </div>
+            <div class="volcano-type">
+                <h3>🔥 Bình nhiên liệu bên ngoài</h3>
+                <p>Chứa hydro và oxy lỏng làm nhiên liệu cho động cơ chính. Là thành phần duy nhất không thể tái sử dụng, sẽ cháy trong khí quyển sau khi tách khỏi tàu.</p>
+            </div>
+            <div class="volcano-type">
+                <h3>🧨 Tên lửa đẩy rắn (SRB)</h3>
+                <p>Hai tên lửa đẩy gắn vào bình nhiên liệu, cung cấp lực đẩy chính trong giai đoạn phóng. Sau khi sử dụng, chúng rơi xuống đại dương và được thu hồi để tái sử dụng.</p>
+            </div>
+        </div>
+        
+        <h3>Thông số kỹ thuật ấn tượng</h3>
+        <ul>
+            <li>Chiều dài tổng thể: 56 mét</li>
+            <li>Trọng lượng khi phóng: 2.000 tấn</li>
+            <li>Tốc độ quỹ đạo: 28.000 km/h</li>
+            <li>Khả năng mang tải trọng: 24.400 kg lên quỹ đạo thấp</li>
+            <li>Phi hành đoàn: 2-8 người</li>
+        </ul>
+        
+        <h2>🌠 Các nhiệm vụ nổi tiếng</h2>
+        <div class="famous-volcanoes">
+            <div class="volcano-card">
+                <h3>Kính viễn vọng Hubble</h3>
+                <p>Năm 1990, tàu Discovery đưa kính viễn vọng Hubble lên quỹ đạo, mở ra cửa sổ mới để quan sát vũ trụ. Các nhiệm vụ sau đó đã sửa chữa và nâng cấp Hubble nhiều lần.</p>
+            </div>
+            <div class="volcano-card">
+                <h3>Trạm vũ trụ quốc tế ISS</h3>
+                <p>Tàu con thoi đóng vai trò then chốt trong việc xây dựng Trạm vũ trụ quốc tế, thực hiện 37 chuyến bay để vận chuyển các module và thiết bị.</p>
+            </div>
+            <div class="volcano-card">
+                <h3>Nhiệm vụ STS-95</h3>
+                <p>Năm 1998, John Glenn - phi hành gia đầu tiên của Mỹ bay quanh Trái Đất - trở lại không gian ở tuổi 77 trên tàu Discovery, trở thành người cao tuổi nhất bay vào vũ trụ.</p>
+            </div>
+        </div>
+    
+        <h2>🌟 Ý nghĩa và di sản</h2>
+        <p>Chương trình tàu con thoi đã để lại nhiều đóng góp quan trọng cho khoa học và nhân loại:</p>
+        <ul class="impact-list">
+            <li>Đưa hơn 350 phi hành gia từ 16 quốc gia lên vũ trụ</li>
+            <li>Thực hiện hơn 3.500 thí nghiệm khoa học trong môi trường không trọng lực</li>
+            <li>Phóng và sửa chữa nhiều vệ tinh và kính viễn vọng không gian</li>
+            <li>Góp phần xây dựng Trạm vũ trụ quốc tế ISS</li>
+            <li>Phát triển công nghệ mới có ứng dụng rộng rãi trong đời sống</li>
+        </ul>
+        
+        <p>Mặc dù chương trình tàu con thoi đã kết thúc, nhưng di sản của nó vẫn tiếp tục truyền cảm hứng cho các thế hệ nhà khoa học và kỹ sư. Ngày nay, các công ty tư nhân như SpaceX và Blue Origin đang phát triển thế hệ tàu vũ trụ mới, kế thừa những bài học từ chương trình tàu con thoi để tiếp tục hành trình khám phá vũ trụ của loài người.</p>
+        
+        <img src="data:image/jpeg;base64,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" alt="Tàu con thoi và Trạm vũ trụ quốc tế" class="volcano-structure">
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Về chúng tôi</h4>
+                <p>Trang web bách khoa cung cấp kiến thức đa dạng và chính xác.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p>Email: micovan108@gmail.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bách Khoa. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>

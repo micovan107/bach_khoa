@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vệ tinh nhân tạo- Bách Khoa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #002c4b;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        h2 {
+            border-left: 5px solid #007acc;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .volcano-structure {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .volcano-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-type {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .impact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .impact-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .impact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .famous-volcanoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .volcano-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .khung-bao {
+            border: 2px solid #4CAF50;     /* Viền màu xanh lá */
+            border-radius: 15px;           /* Bo góc 15px */
+            padding: 15px;                 /* Khoảng cách bên trong */
+            background-color: #f9f9f9;     /* Màu nền nhạt */
+            max-width: 500px;              /* Chiều rộng tối đa */
+            margin: 20px auto;             /* Căn giữa */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bách Khoa</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#articles">Bài viết</a></li>
+                <li><a href="index.html#about">Giới thiệu</a></li>
+                <li><a href="index.html#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-content">
+        <br>
+        <h1>Vệ tinh nhân tạo - Mắt thần trên bầu trời</h1>
+        <img src="data:image/jpeg;base64,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" class="volcano-structure">
+        
+        <h2>Tổng quan</h2>
+        <p>Vệ tinh nhân tạo là thiết bị do con người chế tạo, được đưa vào quỹ đạo xung quanh Trái Đất hoặc các thiên thể khác để thực hiện các nhiệm vụ khoa học, thông tin liên lạc, quan sát Trái Đất và nhiều mục đích khác. Kể từ khi vệ tinh đầu tiên - Sputnik 1 được phóng lên vào năm 1957, hàng nghìn vệ tinh đã được đưa vào không gian, tạo nên một mạng lưới công nghệ quan trọng phục vụ cuộc sống hiện đại.</p>
+
+        <h2>Lịch sử phát triển</h2>
+        <p>Lịch sử phát triển vệ tinh nhân tạo gắn liền với cuộc chạy đua vũ trụ giữa các cường quốc:</p>
+        <ul>
+            <li>1957: Liên Xô phóng vệ tinh Sputnik 1, mở đầu kỷ nguyên không gian</li>
+            <li>1958: Hoa Kỳ phóng vệ tinh Explorer 1</li>
+            <li>1962: Vệ tinh viễn thông đầu tiên Telstar được phóng lên</li>
+            <li>1972: Landsat 1 - vệ tinh quan sát Trái Đất đầu tiên</li>
+            <li>1993: Hệ thống định vị toàn cầu GPS hoàn thiện</li>
+            <li>2020s: Kỷ nguyên vệ tinh thương mại với các chòm vệ tinh mini (constellation) phát triển mạnh mẽ</li>
+        </ul>
+
+        <h2>Phân loại vệ tinh</h2>
+        <div class="volcano-types">
+            <div class="volcano-type">
+                <h3>Theo quỹ đạo</h3>
+                <ul>
+                    <li>Quỹ đạo thấp (LEO): 160-2.000 km</li>
+                    <li>Quỹ đạo trung bình (MEO): 2.000-35.786 km</li>
+                    <li>Quỹ đạo địa tĩnh (GEO): 35.786 km</li>
+                    <li>Quỹ đạo cao (HEO): Trên 35.786 km</li>
+                </ul>
+            </div>
+            <div class="volcano-type">
+                <h3>Theo mục đích</h3>
+                <ul>
+                    <li>Vệ tinh viễn thông</li>
+                    <li>Vệ tinh quan sát Trái Đất</li>
+                    <li>Vệ tinh định vị và dẫn đường</li>
+                    <li>Vệ tinh khoa học và thiên văn</li>
+                    <li>Vệ tinh quân sự và tình báo</li>
+                </ul>
+            </div>
+            <div class="volcano-type">
+                <h3>Theo kích thước</h3>
+                <ul>
+                    <li>Vệ tinh lớn: >1000 kg</li>
+                    <li>Vệ tinh vừa: 500-1000 kg</li>
+                    <li>Vệ tinh nhỏ: 100-500 kg</li>
+                    <li>Vệ tinh mini: 10-100 kg</li>
+                    <li>Vệ tinh nano: 1-10 kg</li>
+                    <li>Vệ tinh pico: 0.1-1 kg</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Cấu trúc cơ bản của vệ tinh</h2>
+        <p>Mặc dù có nhiều loại vệ tinh khác nhau, hầu hết đều có các thành phần cơ bản sau:</p>
+        <ul>
+            <li><strong>Khung vệ tinh (Bus):</strong> Cấu trúc chính chứa và bảo vệ các thiết bị</li>
+            <li><strong>Hệ thống năng lượng:</strong> Pin mặt trời và pin dự phòng</li>
+            <li><strong>Hệ thống điều khiển:</strong> Máy tính và phần mềm điều khiển</li>
+            <li><strong>Hệ thống định hướng:</strong> Giúp vệ tinh duy trì vị trí và hướng chính xác</li>
+            <li><strong>Hệ thống đẩy:</strong> Động cơ nhỏ để điều chỉnh quỹ đạo</li>
+            <li><strong>Ăng-ten:</strong> Nhận và truyền tín hiệu với Trái Đất</li>
+            <li><strong>Tải trọng (Payload):</strong> Thiết bị chuyên dụng theo nhiệm vụ (camera, cảm biến, bộ phát sóng...)</li>
+        </ul>
+
+        <h2>Ứng dụng quan trọng</h2>
+        <ul class="impact-list">
+            <li><strong>Viễn thông:</strong> Truyền hình, internet, điện thoại vệ tinh, kết nối vùng sâu vùng xa</li>
+            <li><strong>Định vị và dẫn đường:</strong> GPS, GLONASS, Galileo, BeiDou phục vụ giao thông, logistics</li>
+            <li><strong>Quan sát Trái Đất:</strong> Theo dõi thời tiết, biến đổi khí hậu, tài nguyên thiên nhiên, thảm họa</li>
+            <li><strong>Khoa học vũ trụ:</strong> Nghiên cứu vũ trụ, thiên văn học, vật lý không gian</li>
+            <li><strong>An ninh quốc phòng:</strong> Giám sát, tình báo, cảnh báo sớm, liên lạc quân sự</li>
+        </ul>
+
+        <h2>Những vệ tinh nổi tiếng</h2>
+        <div class="famous-volcanoes">
+            <div class="volcano-card">
+                <h3>Sputnik 1 (1957)</h3>
+                <p>Vệ tinh nhân tạo đầu tiên của nhân loại, do Liên Xô phóng lên, mở đầu kỷ nguyên không gian.</p>
+            </div>
+            <div class="volcano-card">
+                <h3>Hubble (1990)</h3>
+                <p>Kính viễn vọng không gian nổi tiếng của NASA, đã chụp hàng triệu hình ảnh vũ trụ đẹp mắt và có giá trị khoa học cao.</p>
+            </div>
+            <div class="volcano-card">
+                <h3>Trạm Vũ trụ Quốc tế ISS (1998)</h3>
+                <p>Mặc dù không phải vệ tinh thông thường, ISS là công trình nhân tạo lớn nhất trong không gian, là phòng thí nghiệm quốc tế.</p>
+            </div>
+            <div class="volcano-card">
+                <h3>Starlink (2019-nay)</h3>
+                <p>Chòm vệ tinh internet của SpaceX, dự kiến gồm hàng chục nghìn vệ tinh nhỏ, cung cấp internet toàn cầu.</p>
+            </div>
+        </div>
+
+        <h2>Thách thức và tương lai</h2>
+        <p>Ngành công nghiệp vệ tinh đang đối mặt với nhiều thách thức và cơ hội:</p>
+        <div class="khung-bao">
+            <h3>Thách thức</h3>
+            <ul>
+                <li>Rác vũ trụ ngày càng nhiều, đe dọa hoạt động của vệ tinh</li>
+                <li>Chi phí phóng vệ tinh vẫn còn cao</li>
+                <li>Cạnh tranh về tần số và quỹ đạo</li>
+                <li>Vấn đề an ninh mạng và quân sự hóa không gian</li>
+            </ul>
+            <h3>Xu hướng tương lai</h3>
+            <ul>
+                <li>Vệ tinh siêu nhỏ, chi phí thấp</li>
+                <li>Chòm vệ tinh (constellation) với hàng nghìn vệ tinh nhỏ</li>
+                <li>Vệ tinh tự sửa chữa và có khả năng AI</li>
+                <li>Công nghệ vệ tinh xanh, thân thiện với môi trường</li>
+            </ul>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Về chúng tôi</h4>
+                <p>Trang web bách khoa cung cấp kiến thức đa dạng và chính xác.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên hệ</h4>
+                <p>Email: micovan108@gmail.com</p>
+                <p>Điện thoại: (84) 123-456-789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bách Khoa. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>
